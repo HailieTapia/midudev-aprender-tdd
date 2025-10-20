@@ -9,6 +9,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
+concurrency:
+  group: ci-platzi-hailie-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   platzi_hailie:
 
