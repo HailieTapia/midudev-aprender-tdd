@@ -6,6 +6,8 @@ name: Platzi Hailie CI
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   platzi_hailie:
